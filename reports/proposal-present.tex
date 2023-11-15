@@ -1,0 +1,163 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Define Article %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass{beamer}
+\usecolortheme{whale}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Using Packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{graphics}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{amsmath}
+\usepackage{inputenc}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Other settings %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\sisetup{input-symbols = {()},  % do not treat "(" and ")" in any special way
+         group-digits  = false} % no grouping of digits
+\DeclareUnicodeCharacter{200D}{-}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Title & Author %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title[]{AN EMPIRICAL EQUILIBRIUM SEARCH MODEL OF THE LABOR MARKET \\ using Labor Market Data of Iran}
+\subtitle[]{Van den Berg and Ridder (1998)}
+\author{Mahdi Mir}
+\institute[]{TeIAS}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Document Start %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\maketitle
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Introduction}
+\subsection{The Literature}
+
+
+\begin{frame}{The Literataure}
+    \begin{itemize}
+        \item Equilibrium search models:
+              \begin{itemize}
+                  \item Albrecht and Axell (1984)
+                  \item Burdett and Mortensen (1998)
+              \end{itemize}
+        \item Empirical analyses:
+              \begin{itemize}
+                  \item Eckstein and Wolpin (1990)
+                  \item Van den Berg and Ridder (1998)
+              \end{itemize}
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{The Literataure}
+    \begin{itemize}
+        \item Labor market search model as the outcome of optimal choices by both workers and employers.
+        \item The optimal strategy of the workers usually has the reservation wage property.
+        \item A dispersed wage offer distribution as a result of a dispersed distribution of reservation wage.
+        \item Parameter changes that affect the reservation wages of job searchers also affect the wage offer distribution that they face.
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{The Literataure}
+    \begin{itemize}
+        \item In an equilibrium search model the wage offer distribution is endogenous.
+        \item It results from optimal wage setting by firms that take account of the responses by job seekers and other firms, and hence is affected by a change in unemployment income.
+        \item In AA model job-to-job transitions or layoffs are not allowed, contrary to BM model.
+        \item AA model require workers and firms heterogeneous in order to obtain a dispersed wage offer distribution.
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{The Literataure}
+    \begin{itemize}
+        \item Job-to-job transitions are common and it is a source of dispersion in reservation wage and hence the wage offer distribution.
+        \item In BM model even if all workers and firms are identical, on the job search and the risk of becoming unemployed produce a dispersed wage offer distribution.
+        \item In the latter case there is a explicit solution for the equilibrium wage offer and earnings distributions.
+        \item Allowing for observed and unobserved population heterogeneity makes the model more realistic and more able to give an acceptable fit to the data.
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{The Literataure}
+    \begin{itemize}
+        \item BM consider a labor market that consists of a large number of segments. Every segment is a labor market of its own, and all workers and firms in a particular segment are identical. (between-market heterogeneity)
+        \item Eckstein and Wolpin (1990), in their empirical analysis of the Albrecht-Axell model, consider a single labor market with unobserved differences in the value of leisure between workers and unobserved differences in productivity between firms (they do not have observed differences across workers or firms). (within-market heterogeneity)
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Estimation Method, Data}
+    \begin{itemize}
+        \item VR estimate the model by maximum likelihood.
+        \item Using panel data on unemployed and employed individuals in The Netherlands in the 80s.
+        \item For most individuals in the data, multiple durations (like unemployment durations and job durations) are observed.
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Results}
+    \begin{itemize}
+        \item On average, the arrival rate of job offers is only slightly larger when employed.
+        \item A small number of observed personal characteristics is suﬃcient to capture the heterogeneity in arrival and separation rates, but insuﬃcient to capture heterogeneity in the productivity of ﬁrms.
+        \item Contrary to Eckstein and Wolpin we find that a relatively small fraction of wage variation is explained by measurement error and that about a fifth is pure wage variation as generated by the presence of search frictions.
+    \end{itemize}
+\end{frame}
+
+
+
+\section{THE EQUILIBRIUM SEARCH MODEL}
+\subsection{Theory}
+
+
+
+\begin{frame}{Assumptions}
+    \begin{enumerate}
+        \item There are continua of workers and firms with measures m and 1, respectively.
+        \item Workers receive job offers at rate \(\lambda_{0}\) if unemployed and \(\lambda_{1}\) if employed. A job offer is an i.i.d. drawing from a wage offer distribution with c.d.f. \(F(w) .\) An offer has to be accepted or rejected upon arrival. During tenure of a job, the wage is constant. The utility flow of being employed at a wage \(w\) equals \(w\).
+        \item Job-worker matches break up at rate \(\delta .\) If this happens, the worker becomes unemployed. The utility flow of being unemployed is \(b .\)
+        \item Firms have a linear production function and the marginal \((=\) average \()\) revenue product is \(p .\) A firm pays all its workers the same wage \(w\).
+        \item Workers maximize their expected wealth and firms maximize their expected steady-state profit flow.
+        \item The firms cannot set their wage below the mandatory minimum wage \(\underline{w}_{L}\).
+    \end{enumerate}
+\end{frame}
+
+
+\begin{frame}{The Model}
+    \begin{itemize}
+        \item First, we consider the model of a labor market with homogeneous workers and firms, as developed by Burdett and Mortensen (1998).
+        \item In the limiting case of zero discounting, the reservation wage \(r\) can be shown to be:
+              \[
+                  r=b+\left(\lambda_{0}-\lambda_{1}\right) \int_{r}^{\infty} \frac{\bar{F}(w)}{\delta+\lambda_{1} \bar{F}(w)} d w \quad \text { with } \bar{F}=1-F
+              \]
+        \item Workers are continuously searching for a better paying job.
+              An employed individual accepts a wage offer if and only if it exceeds his current wage.
+        \item Wage offer distribution :\(F\) is distribution of wages offered to job seekers.
+        \item Earnings distribution: \(G\) is the distribution of wages received by workers who are currently employed.
+    \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Earnings Distribution}
+    \begin{itemize}
+        \item Outflow:
+              \[
+                  \begin{gathered}
+                      \lambda_{1} \bar{F}(w) G(w)(m-u) \\
+                      \delta G(w) \cdot(m-u)
+                  \end{gathered}
+              \]
+        \item Inflow:
+              \[
+                  \lambda_{0}(F(w)-F(r)) u
+              \]
+        \item The result:
+              \[
+                  G(w)=\frac{F(w)}{\delta+\lambda_{1} \bar{F}(w)} \cdot \frac{\lambda_{0} u}{(m-u)} .
+              \]
+    \end{itemize}
+\end{frame}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Document End %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
